@@ -1,13 +1,20 @@
 package main.java;
 
-import main.java.car.Car;
-import main.java.car.CarDTO;
-import main.java.cs.Control;
-import main.java.cs.Sample2;
-import study.Bank;
-import study.ref;
-import main.java.rest.RestFullApi;
-import study.Escape;
+import main.java.interf.Audio;
+import main.java.interf.Remote1;
+import main.java.interf.Search;
+import main.java.interf.Tv;
+
+//import main.java.car.Car;
+//import main.java.car.CarDTO;
+//import main.java.cs.Control;
+//import main.java.cs.Sample2;
+//import study.Bank;
+//import study.ref;
+//import main.java.rest.RestFullApi;
+//import study.Escape;
+//import main.java.extend.*;
+
 public class Main {
 	
 	public static void main(String[] args) {
@@ -114,11 +121,83 @@ public class Main {
 		//RestFullApi rest = new RestFullApi();
 		//rest.getRestData();
 		
-		Escape escape = new Escape();
+		//Escape escape = new Escape();
 		// 4자리 비번 방탈출 
 		//escape.escapeRoom();
+		//escape.runMachine();
+		//ComputerExample cmE = new ComputerExample();
+		//cmE.comE();
 		
-		escape.runMachine();
+		//Animal Ani = new Animal();
+		//Ani.animalSound();
+		//AnimalTest AniT = new AnimalTest();
+		//AniT.myAniamlTest();
+		
+		
+		//Child ch = new Child();
+		//ch.mathod1();
+		//ch.mathod2();
+		
+		//강제 타입변환
+		//Parent par = new Child();
+		
+		
+		//Parent parent = new Parent();
+		//Child ch1 = (Child)par;
+		//ch1.fleld1 = "data2";
+		//ch1.method3();
+		
+		//parent.mathod1();
+		//parent.mathod2();
+		
+		
+		//Coffee co = new Coffee();
+		//co.cof();
+		
+		//CoffeeTest coT = new CoffeeTest();
+		//coT.CofTest();
+	
+		//클래스는 객체를 만들기 위한 틀
+		//Car 클래스를 car객체로 만든다.
+		//Car car = new Car();
+		//car.tire = new Tire();
+		//car.run();
+		// car객체의 속성인 tire를 Tire클래스의 객체로 만든다.
+		//Tire tire = new Tire();
+		//tire.roll();
+		
+		//car객체의 속성인 tire를 HankookTire클래스의 객체로 만든다.
+		//car.tire = new HankookTire();
+		//car.run();
+
+		//car.tire = new KumhoTire();
+		//car.run();
+		
+		//Vehicle ve = new Vehicle();
+		//ve.run();
+		//드라이버 클래스 객체 생성 
+		//Driver dir = new Driver();
+		// 드라이버 클래스 객체의 드라이버 메소드를 실행할때 Bus 클래스의 객체를 매개 변수로 삼는다.  
+		//dir.driver(new Bus());// 드라이버클래스 객체에 드라이브 메소드를 실행하는데 매개변수는 Bus 클래스의 객체이다.
+		//dir.driver(new Vehicle());
+		
+		//SmartPhone sp = new SmartPhone("123");
+		//sp.turnOn();
+		//sp.turnOff();
+		//sp.internetSearch();
+		//Tv t= new Tv();
+		//t.turnOn();
+		
+		Remote1 r1;
+		r1 = new Tv();
+		r1.turnOn();
+		
+		r1= new Audio();
+		r1.turnOn();
+		
+		Search s;
+		s = new Tv();
+		s.SearchUrl("youtube");
 	}
 }
 
